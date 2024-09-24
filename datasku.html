@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<table border="1">
+    <tr data-sku="SKU001">
+        <td><img src="product1.jpg" alt="Product 1" style="max-width: 50px; max-height: 50px;"></td>
+        <td>Product 1 Description</td>
+        <td>SKU001</td>
+        <td><button class="order-search-btn">Search</button></td>
+    </tr>
+    <tr data-sku="SKU002">
+        <td><img src="product2.jpg" alt="Product 2" style="max-width: 50px; max-height: 50px;"></td>
+        <td>Product 2 Description</td>
+        <td>SKU002</td>
+        <td><button class="order-search-btn">Search</button></td>
+    </tr>
+    <tr data-sku="SKU003">
+        <td><img src="product3.jpg" alt="Product 3" style="max-width: 50px; max-height: 50px;"></td>
+        <td>Product 3 Description</td>
+        <td>SKU003</td>
+        <td><button class="order-search-btn">Search</button></td>
+    </tr>
+</table>
+
+<script>
+    $(document).on("click", ".order-search-btn", function() {
+        // Get the value of data-sku from the parent <tr>
+        var skuValue = $(this).closest('tr').data('sku');
+        performOrderSearch(skuValue); // Call the function to perform some action with the SKU
+        console.log(skuValue); // Log the SKU to the console
+    });
+
+    function performOrderSearch(sku) {
+        alert("Performing search for SKU: " + sku);
+    }
+</script>
+
+</body>
+</html>

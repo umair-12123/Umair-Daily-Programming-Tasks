@@ -1,0 +1,279 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+     
+     /* navbar css */
+      .navbar-brand img {
+        margin-top: 5px;
+        width: 200px; 
+        height: auto; 
+  }
+
+  .navbar {
+        height: 120px;
+        padding: 0.5rem 1rem;
+  }
+  .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0.1); 
+  }
+  .navbar-toggler-icon {
+                      color: black !important;
+                      z-index: 3; 
+  }
+  .nav-list {
+          display: flex; 
+          list-style-type: none; 
+          padding: 0; 
+          margin: 0; 
+  }
+
+      .nav-list li {
+          margin-right: 40px; 
+          line-height: 100px;
+      }
+
+      .navrow {
+        
+    
+      min-height: 100px; 
+      padding: 20px 0; 
+      
+    
+    }
+    .nav-list li a {
+      color: black;
+      text-decoration: none;
+    }
+    .nav-list li a:hover, .searchBtnOuternav:hover {
+      color: white;
+      text-shadow: 
+          1px 1px 2px black,   /* Subtle black shadow */
+          0 0 25px blue,       /* Outer blue glow */
+          0 0 5px darkblue;    /* Inner dark blue glow */
+      transition: text-shadow 0.6s ease, color 0.6s ease; /* Ensure both color and shadow transition smoothly */
+    }
+    
+
+
+ /* signin/ sign out css */
+ .TxtAtag{
+  text-decoration: none;
+  color: black;
+  line-height: 100px;
+  margin-right: auto;
+  font-size: 12px;
+}
+/* css about search */
+
+
+.searchbarstyle {
+  width: 90%; /* Set the input width to 100% */
+  box-sizing: border-box;
+  height: 70px; /* Ensure padding is included in the width */
+  background-color: transparent;
+color: white;
+margin: 15px 150px 15px 30px;
+outline-style: hidden;
+outline: none;
+font-size: 30px;
+border:none;
+}
+.searchbarstyle::placeholder {
+color: white; /* Change this to your desired color */
+opacity: 1;  /* Opacity of the placeholder (1 is fully opaque) */
+}
+.searchdiv{
+z-index: 1;
+display: none;
+position: relative;
+width: 100%;
+height: 100px;
+color: white;
+background-color: rgba(0, 0, 0, 0.8)  ;
+
+}
+.searchBtnOuternav{
+border: none;
+font-size: 30px;
+color: black;
+background-color: white;
+outline: none;
+line-height: 10px;
+}
+.searchbutton {
+      position: absolute;
+      right: 50px;
+      top: 22px;
+      height: 55px;
+      width: 60px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: white;
+  }
+  .searchBtnOuternav:focus, .searchbutton:focus, .btnoftoggle:focus {
+outline: none; 
+border: none;
+}
+
+.searchbutton i {
+      font-size: 30px;
+      color: white;
+  }
+
+
+.btnoftoggle{
+
+
+background-color: white;
+border: none;
+outline: none;
+font-size: 30px;
+}
+.searchsidebarbtn{
+
+line-height: 100px;
+right: 30px;
+position: absolute;
+display: none;
+top: 19px;
+z-index: 100;
+}
+.formalign{
+  margin-top: 38px;
+}
+ /* slider css */
+ .slider-container {
+  width: inherit;
+  margin: 0 auto; 
+  position: relative;
+  height: 700px;
+  margin-bottom: 20px;
+  padding: 0; 
+  
+}
+.slider div {
+padding: 0;
+margin: 0; 
+max-height: 700px;
+}
+.slider img {
+max-height: 700px ;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* media querys */
+@media screen and (max-width: 1430px) {
+  .nav-list li {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navhide,.searchbtnhide{
+  display: none;
+  }
+  .searchsidebarbtn {
+    display: block;
+  }
+  .TxtAtag{
+  position: relative;
+  right: -92%;
+  top: -63px;
+  line-height: 1px;
+  }
+  .nav-list{
+    flex-direction: row;
+    margin: auto;
+    line-height: 10px;
+  }
+  .nav-list li{
+    margin:auto;
+  }
+
+}
+@media screen and (max-width: 900px) {
+.nav-list{
+flex-direction: column;
+margin-right:5px;
+line-height: 0%;
+background-color: blue;
+width: 20%;
+
+}
+.nav-list li a{
+    margin:auto;              
+
+  }
+  .nav-list li{
+    line-height: 5px;
+    padding: 7px;
+    margin: 10px 10px 10px  ;
+  }
+  .searchbtnnone{
+    display: none;
+  }
+  .searchdiv{
+    position: relative; /* or absolute, depending on your layout */
+top: 50px;          /* Adjust top position */
+left: 20px;         /* Adjust left position */
+
+/* Optional: Adjust other properties like margin, padding, etc. */
+margin-top: 20px;
+z-index: 1000;
+}
+.searchbarstyle{
+width: 91%;
+margin-top: 0px;
+height: inherit;
+margin-left: 5px;
+font-size: 20px;
+} 
+.searchbutton{
+right: 5px;
+height: 38px;
+width: 50px;
+top: 10px;
+font-size: 20px;
+}     
+.searchdiv{
+max-width:  52%;
+left: 275px;
+top: -40px;
+margin-top: -55px;
+z-index: 1000;
+height: 50px;
+border-radius: 25px ;
+
+}
+}
+
+@media screen and (max-width: 790px){
+.searchdiv{left: 252px;}
+}
+@media screen and (max-width: 660px){
+.searchdiv{left: 230px;}
+}
+@media screen and (max-width: 610px){
+.searchbtnnone{
+    display: block;
+    position: relative;
+    top: 63px;
+    right: 58px;
+  }
+  .searchsidebarbtn{
+    right: 30px;
+    top: -11px;
+  }
+  .searchdiv{
+    top: 54px;
+    max-width: 100%;
+    left: 0%;
+    border-radius: 0px;
+  }
+}
+

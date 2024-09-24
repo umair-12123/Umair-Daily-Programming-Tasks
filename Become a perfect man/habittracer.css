@@ -1,0 +1,29 @@
+.custom-message {
+    background-color: #f8f9fa;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add some margin to the top */
+  }
+  .custom-message p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  .custom-message p strong {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  body{ background-color: black;}
+ 
+  .highlight {
+    animation: highlight-animation 2s ease-in-out infinite alternate;
+  }
+  @keyframes highlight-animation {
+    0% {
+      background-color: rgba(0, 123, 255, 0.2);
+    }
+    100% {
+      background-color: rgba(0, 123, 255, 0.5);
+    }
+  }

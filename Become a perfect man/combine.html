@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick Theme CSS (optional) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Custom Styles for Slider -->
+    <style>
+        /* Style the slider container */
+        .slider-container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        /* Add padding to the slides */
+        .slider div {
+            padding: 10px;
+        }
+
+        /* Style the slider images */
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Customize dots */
+        .slick-dots li button:before {
+            color: #000;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #3498db;
+        }
+
+        /* Customize prev/next arrows */
+        .slick-prev, .slick-next {
+            background-color: #3498db;
+            border-radius: 50%;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            z-index: 1;
+        }
+
+        .slick-prev:hover, .slick-next:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <div class="slider">
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1"></div>
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2"></div>
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3"></div>
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+4" alt="Slide 4"></div>
+        </div>
+    </div>
+
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Initialize Slick Slider -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,           // Show dots navigation
+                infinite: true,       // Loop through slides
+                speed: 300,           // Slide transition speed
+                slidesToShow: 1,      // Number of slides to show at once
+                adaptiveHeight: true, // Adjust height based on content
+                arrows: true,         // Show next/prev arrows
+                autoplay: true,       // Autoplay slider
+                autoplaySpeed: 2000,  // Speed of autoplay (2 seconds)
+            });
+        });
+    </script>
+</body>
+</html>

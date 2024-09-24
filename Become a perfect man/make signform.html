@@ -1,0 +1,218 @@
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Become a Perfect Man</title>
+      <!-- slick slider -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Your Custom CSS -->
+    
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Slick Theme CSS (optional) -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <!-- Font Awesome (optional) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="signupform.css">
+      
+        <style>
+  
+   
+   
+
+  .sticky-top {
+
+    z-index: 10; /* Ensure it stays on top of other elements */
+    position: -webkit-sticky; /* For Safari compatibility */
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    background-color: white; /* Avoid content overlap */
+    box-shadow: 0 4px 2px -2px gray;/* Optional: Adds shadow when sticky */
+    
+}
+
+      </style>
+      <link rel="stylesheet" href="./navbar.css">
+    </head>
+    <body>
+     
+        <div class="container-fluid">
+            <nav class="bg-white row sticky-top navrow">
+              <div class="col-xl-2">
+                <a class="" href="Home.html">
+                  <img src="./logo/Screenshot from 2024-09-15 20-02-16.png" alt="Perfect Man Logo" width="200px" height="100px" class="d-inline-block align-top">
+                </a>
+              </div>
+          
+              <div class="col-xl-9 navhide">
+                <ul class="nav-list">
+                  <li><a class="" href="Home.html">Home</a></li>
+                  <li><a class="" href="habittracer.html">Habit Tracker</a></li>
+                  <li><a class="" href="successstories.html">Success Stories</a></li>
+                  <li><a class="" href="lifstrtgies.html">Life Strategies</a></li>
+                  <li><a class="" href="blogs.html">Blog</a></li>
+                  <li><a class="" href="about.html">About</a></li>
+                  <li><a class="" href="#contact">Contact</a></li>
+                  <li><a class="" href="make signform.html">Login/SignUp</a></li>
+                </ul>
+              </div>
+          
+              <div class="col-xl-1 formalign searchbtnhide">
+                <button class="searchBtnOuternav" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </nav>
+          
+            <div class="searchsidebarbtn">
+              <button class="searchBtnOuternav searchbtnnone" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btnoftoggle" id="btnforshowmenu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+          
+            <nav class="row">
+              <div class="col-12 searchdiv">
+                <input class="searchbarstyle" type="search" placeholder="Search" aria-label="Search" name="query" required>
+                <button class="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </nav>
+          </div>
+          <!-- sign form -->
+          <div class="form-container">
+            <!-- Sign Up Form -->
+            <h2>Sign Up</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="signupName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="signupName" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signupEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signupPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Repeat your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                <p class="text-center mt-3">Already have an account? <a href="#signInModal" data-bs-toggle="modal">Sign In</a></p>
+            </form>
+        </div>
+        
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="signinEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signinEmail" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signinPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signinPassword" placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                            <p class="text-center mt-3">Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+          <!-- footer -->
+          <footer class="bg-dark text-white mt-5 p-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>About Us</h5>
+                  <p>We are dedicated to promoting justice and equality in society. Our goal is to provide resources and support for personal growth and community development.</p>
+                </div>
+                <div class="col-md-4">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="Home.html" class="text-white">Home</a></li>
+                    <li><a href="about.html" class="text-white">About</a></li>
+                    <li><a href="#services" class="text-white">Services</a></li>
+                    <li><a href="#contact" class="text-white">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h5>Follow Us</h5>
+                  <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+          
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- jQuery (required for Slick) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <!-- Slick JS -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+       
+        $(document).ready(function(){
+        function toggleSearchOnScreenResized() {
+      var screenWidth = $(window).width();
+  
+      if (screenWidth <= 900 && screenWidth > 610) {
+          $(".searchdiv").slideDown(300); 
+      } else {
+          $(".searchdiv").slideUp(300); 
+      }
+  }
+  toggleSearchOnScreenResized();
+  $(window).resize(function () {
+      toggleSearchOnScreenResized();
+  });
+      $(".searchBtnOuternav").click(function () {
+          $(".searchdiv").slideToggle(300, function () {
+              if ($(this).is(':visible')) {
+                  $(".searchbarstyle").focus();
+                  $(".searchBtnOuternav i").removeClass("fa-search").addClass("fa-times"); // Replace search icon with cross
+              } else {
+                  $(".searchBtnOuternav i").removeClass("fa-times").addClass("fa-search"); // Replace cross icon with search
+              }
+          });
+      });
+      $("#btnforshowmenu").click(function () {
+          $(".navhide").slideToggle(300);
+      });
+  });
+  // model box js
+  document.addEventListener('DOMContentLoaded', function() {
+          var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+          myModal.show();
+      });
+  </script>
+      </body>
+      </html>
+  

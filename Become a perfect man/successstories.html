@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker Notice</title>
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your Custom CSS -->
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Slick Theme CSS (optional) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Font Awesome (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="habittracer.css">
+    <style>
+        .sticky-top {
+
+            z-index: 10;
+            /* Ensure it stays on top of other elements */
+            position: -webkit-sticky;
+            /* For Safari compatibility */
+            position: sticky;
+            top: 0;
+            /* Sticks to the top of the viewport */
+            background-color: white;
+            /* Avoid content overlap */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Optional: Adds shadow when sticky */
+
+        }
+    </style>
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="bg-white row   sticky-top navrow">
+            <div class="col-xl-2 ">
+                <a class="" href="Home.html">
+                    <img src="./logo/Screenshot from 2024-09-15 20-02-16.png" alt="Perfect Man Logo" width="200px"
+                        height="100px  " class="d-inline-block align-top">
+                </a>
+            </div>
+
+            <div class="col-xl-9 navhide ">
+                <ul class="nav-list">
+                    <li class="">
+                        <a class="" href="Home.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="habittracer.html">Habit Tracker</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="successstories.html">Success Stories</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="lifstrtgies.html">Life Strategies</a>
+                    </li>
+                    <!-- <li class="">
+              <a class="" href="#quran-hadith">Quran & Hadith</a>
+            </li> -->
+                    <li class="">
+                        <a class="" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="about.html">About</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#contact">Contact</a>
+                    </li>
+                    <li class=""> <a class="" href="make signform.html">Login/SignUp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-1  formalign searchbtnhide">
+                <button class="searchBtnOuternav" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- <div class="col-xl-1  navhide">
+        <a class=" TxtAtag " href="#contact">Login/SignUp</a>
+        </div> -->
+    </div>
+    <div>
+        <div class="searchsidebarbtn">
+            <button class="searchBtnOuternav searchbtnnone" type="submit"><i class="fas fa-search"></i></button>
+            <button class="btnoftoggle" id="btnforshowmenu"><i class="fa-solid fa-bars"></i></button>
+            </button>
+        </div>
+    </div>
+    </nav>
+    <nav class="row">
+        <div class="col-12 searchdiv">
+            <input class="searchbarstyle" type="search" placeholder="Search" aria-label="Search" name="query" required>
+            <button class="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="custom-message">
+            <div class="d-flex align-items-center">
+                <div>
+                    <p>
+                        Our team is excited to share some incredible success stories from our community! These inspiring
+                        journeys showcase the dedication and perseverance of individuals who have utilized our resources
+                        to achieve their goals.</p>
+                    <p>Whether it’s a fitness transformation, career advancement, or personal growth, these stories
+                        highlight the impact of commitment and the power of support from our community.</p>
+                   <p> We appreciate your continued support as we strive to empower everyone with the tools and inspiration
+                    needed to create positive change in their lives. In sha Allah, more success stories will be shared
+                    soon!
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#habittrackermodel" style="display: none;">
+        Launch Modal
+    </button> -->
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="habittrackermodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feature Under Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Our team is currently working on this feature.</strong> In sha Allah, it will be
+                        functioning properly in a few days. Thank you for your patience and understanding!
+                    </div>
+                    <p class="text-muted">We appreciate your support as we aim to bring new and improved features to
+                        enhance your experience.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to promoting justice and equality in society. Our goal is to provide resources and support for personal growth and community development.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#contact" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+        
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            function toggleSearchOnScreenResized() {
+                var screenWidth = $(window).width();
+
+                if (screenWidth <= 900 && screenWidth > 610) {
+                    $(".searchdiv").slideDown(300);
+                } else {
+                    $(".searchdiv").slideUp(300);
+                }
+            }
+            toggleSearchOnScreenResized();
+            $(window).resize(function () {
+                toggleSearchOnScreenResized();
+            });
+            $(".searchBtnOuternav").click(function () {
+                $(".searchdiv").slideToggle(300, function () {
+                    if ($(this).is(':visible')) {
+                        $(".searchbarstyle").focus();
+                        $(".searchBtnOuternav i").removeClass("fa-search").addClass("fa-times"); // Replace search icon with cross
+                    } else {
+                        $(".searchBtnOuternav i").removeClass("fa-times").addClass("fa-search"); // Replace cross icon with search
+                    }
+                });
+            });
+            $("#btnforshowmenu").click(function () {
+                $(".navhide").slideToggle(300);
+            });
+        });
+        // model box js
+        document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('habittrackermodel'));
+            myModal.show();
+        });
+    </script>
+</body>
+
+</html>

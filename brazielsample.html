@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .shipping-quote {
+            margin-bottom: 20px;
+        }
+        .shipping-quote label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .shipping-quote input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .shipping-quote button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .shipping-quote button:hover {
+            background-color: #0056b3;
+        }
+        #quote-result {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .custom-quote {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .whatsapp-btn {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatsapp-btn img {
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Get a Shipping Quote</h1>
+        <div class="shipping-quote">
+            <label for="zip-code">Enter your zip code:</label>
+            <input type="text" id="zip-code" placeholder="86050-450">
+            <button onclick="getShippingQuote()">Get Personalized Shipping Quote</button>
+
+            <div id="quote-result"></div>
+        </div>
+
+        <div class="custom-quote">
+            <a href="https://wa.me/+923080445550?text=I%20want%20a%20personalized%20shipping%20quote" class="whatsapp-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+                Cotar Frete Personalizado
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function getShippingQuote() {
+            var zip = document.getElementById("zip-code").value;
+            if (zip === "86050-450") {
+                document.getElementById("quote-result").innerHTML = "Shipping cost: R$10.00";
+            } else {
+                document.getElementById("quote-result").innerHTML = "Invalid zip code!";
+            }
+        }
+    </script>
+
+</body>
+</html>
